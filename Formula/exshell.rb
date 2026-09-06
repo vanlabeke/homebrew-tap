@@ -10,7 +10,7 @@ class Exshell < Formula
 
   on_macos do
     url "https://github.com/vanlabeke/exshell/releases/download/v0.0.1/exshell_0.0.1_darwin_universal.tar.gz"
-    sha256 "10be62f5db01c3a856b4a6d84e1bccd2a1f0dab1276b242713d092b0aa789b93"
+    sha256 "24bc5b91c594c7c427476110b10ba87017a7d69b78e8dd8c75ad4c1716c20879"
 
     define_method(:install) do
       bin.install "exshell"
@@ -20,14 +20,14 @@ class Exshell < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vanlabeke/exshell/releases/download/v0.0.1/exshell_0.0.1_linux_amd64.tar.gz"
-      sha256 "d9b140c763a9da4cebd8cf8e2f5d4097f3f01228eed48cf82c0809455e5478a7"
+      sha256 "d39e9b1c35b18f531d0873b62512aa650abd423c00ce5a8dd0fa60d62d5ce473"
       define_method(:install) do
         bin.install "exshell"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vanlabeke/exshell/releases/download/v0.0.1/exshell_0.0.1_linux_arm64.tar.gz"
-      sha256 "bcd7d4e7207ff424d84fe0275d70a426cf4e36311926e6725436aea2d27197b2"
+      sha256 "8a4a0c339815661356c18c1996670001c255f9c04f99f6a9f5a06c361c1c3b92"
       define_method(:install) do
         bin.install "exshell"
       end
